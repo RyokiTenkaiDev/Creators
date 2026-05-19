@@ -12,20 +12,17 @@ local PanelVisible = true
 local ESPHighlights = {}
 local ButtonCooldowns = {}
 
--- Configuração do Som
 local MainGUI = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local ToggleBtn = Instance.new("TextButton")
 local ContentFrame = Instance.new("Frame")
 
--- Criar um som que será reproduzido ao iniciar
 local StartupSound = Instance.new("Sound")
 StartupSound.Name = "StartupSound"
 StartupSound.SoundId = "rbxassetid://76650356472656"
 StartupSound.Volume = 0.5
 StartupSound.Parent = SoundService
 
--- Reproduzir som ao iniciar o script
 StartupSound:Play()
 
 MainGUI.Name = "RyokiHub"
